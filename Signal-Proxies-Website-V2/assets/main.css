@@ -1,0 +1,764 @@
+*{
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    transition: all 0.4s linear;
+}
+body {
+    background-color: white;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 15px;
+      border-radius: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    opacity: 0; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #75e3ea; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5edce6; 
+  }
+#backblur {
+    position: absolute;
+    width: 4280px;
+    height: 952px;
+    left: -300px;
+    top: -250px;
+    transform: rotate(-5.9deg);
+    
+    background: rgba(242, 247, 255, 0.7);
+    backdrop-filter: blur(60px);
+}
+.lpurp-circle {
+    position: absolute;
+    width: 406px;
+    height: 406px;
+    left: 95px;
+    top: 360px;
+    border-radius: 10000px;
+    
+    background: #8c97ff;
+    opacity: 1;
+}
+.purp-circle {
+    position: absolute;
+    width: 546px;
+    height: 546px;
+    left: 1150px;
+    top: -150px;
+    border-radius: 10000px;
+    
+    background: #001AFF;
+    opacity: 0.5;
+}
+.turq-circle {
+    position: absolute;
+    width: 168px;
+    height: 168px;
+    border-radius: 100px;
+    top: 550px;
+    left: 950px;
+    
+    background: #2EC5CE;
+    opacity: 0.8;
+}
+.OBr {
+    animation: slideInR ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes slideInR {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        display: block;
+    }
+}
+.OBl {
+    animation: slideInL ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes slideInL {
+    0% {
+        left: 2000px;
+    }
+    100% {
+        display: block;
+    }
+}
+.light-purple {
+    position: absolute;
+    width: 582px;
+    height: 155px;
+    top: 540px;
+    left: 1240px;
+    transform: rotate(1.6deg);
+}
+.purple-high {
+    position: absolute;
+    width: 1082px;
+    height: 155px;
+    top: 620px;
+    left: 1025px;
+    transform: rotate(-1.5deg);
+}
+.purple-low {
+    position: absolute;
+    width: 1082px;
+    height: 175px;
+    top: 861px;
+    left: -700px;
+    transform: rotate(-0.8deg);
+}
+.blue-high {
+    position: absolute;
+    width: 722px;
+    height: 155px;
+    top: 737px;
+    left: -1px;
+    transform: rotate(-0.3deg);
+}
+.blue-low {
+    position: absolute;
+    width: 1082px;
+    height: 155px;
+    top: 644px;
+    left: 1700px;
+    transform: rotate(-1.3deg);
+}
+.logo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    left: 3%;
+}
+.menu {
+    position: absolute;
+    width: 363px;
+    height: 40px;
+    top: 16px;
+    left: 75%;
+    text-decoration: none;
+}
+.ht {
+    margin-left: 100px;
+    text-decoration: none;
+}
+.fe {
+    top: 10px;
+    left: -50%;
+}
+.fa {
+    top: 10px;
+    left: -20%;
+}
+.so {
+    top: 10px;
+    left: 0%;
+}
+.ht {
+    margin-left: 100px;
+    text-decoration: none;
+}
+.so:hover {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);;
+}
+.fe:hover {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);;
+}
+.fa:hover {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);;
+}
+a {
+    position: absolute;
+    width: 28px;
+    height: 20px;
+    text-decoration: none;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #070337;
+}
+.discord-header {
+    position: absolute;
+    width: 115px;
+    height: 40px;
+    color: white;
+    outline: none;
+    border: none;
+    
+    background: #5C6BF5;
+    border-radius: 10px;
+}
+.discord-header:hover {
+    transform: scale(1.02);
+    background: #6372f7;
+    position: absolute;
+    box-shadow: 0px 4px 14px 6px rgba(92, 107, 245, 0.35);
+    border-radius: 10px;
+}
+.discord-header:active {
+    transform: scale(1.08);
+}
+.d-h-s {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    left: 18%;
+
+    outline: none;
+    border-radius: 50px;
+    display: none;
+}
+.branding {
+    position: absolute;
+    width: 540px;
+    height: 264px;
+    top: 120px;
+    left: 12%;
+}
+.brand {
+    position: absolute;
+    width: 540px;
+    height: 98px;
+    top: 0px;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 98px;
+    
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    color: #070337;
+}
+.slogan {
+    position: absolute;
+    width: 540px;
+    height: 32px;
+    top: 150px;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    color: #070337;
+}
+.dash {
+    position: absolute;
+    width: 180px;
+    height: 48px;
+    top: 240px;
+    left: 32%;
+    outline: none;
+    border: none;
+    background: #5C6BF5;
+    box-shadow: 0px 8px 54px 2px #5C6BF5;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    
+    background: #5C6BF5;
+    border-radius: 10px;
+}
+.dash:hover {
+    transform: scale(1.02);
+}
+.dash:active {
+    transform: scale(1.05);
+}
+@media(max-width: 630px) {
+    .branding {
+        transform: scale(0.7);
+        left: -20px;
+    }
+}
+#features {
+    position: absolute;
+    width: 1001px;
+    height: 470px;
+    top: 1050px;
+    left: 25%;
+    animation: fadeIn ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+.features {
+    position: absolute;
+    width: 232px;
+    height: 64px;
+    left: 325px;
+    top: 10px;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 64px;
+
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    color: #5C6BF5;
+}
+h3 {
+    position: absolute;
+    width: 232px;
+    height: 64px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 64px;
+
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    color: #5C6BF5;
+}
+h4 {
+    position: absolute;
+    width: 604px;
+    height: 64px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    color: #070337;
+}
+.f-heading {
+    position: absolute;
+    width: 604px;
+    height: 64px;
+    top: 20px;
+    left: 145px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    color: #070337;
+}
+p1 {
+    position: absolute;
+    width: 428px;
+    height: 32px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    color: #070337;  
+}
+p2 {
+    position: absolute;
+    width: 428px;
+    height: 52px;
+    top: 40px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    color: #070337;
+}
+.f-1 {
+    position: absolute;
+    width: 428px;
+    height: 92px;
+    top: 240px;
+}
+.f-2 {
+    position: absolute;
+    width: 428px;
+    height: 92px;
+    top: 240px;
+    left: 500px; 
+}
+.f-3 {
+    position: absolute;
+    width: 428px;
+    height: 92px;
+    top: 440px;
+    left: 500px; 
+}
+.f-4 {
+    position: absolute;
+    width: 428px;
+    height: 92px;
+    top: 440px;
+}
+#backblur-2 {
+    position: absolute;
+    width: 4280px;
+    height: 1002px;
+    left: -300px;
+    top: 1850px;
+    transform: rotate(3deg);
+    
+    background: rgba(242, 247, 255, 0.7);
+    backdrop-filter: blur(60px);
+}
+#faq {
+    position: relative;
+    width: 988px;
+    height: 515px;
+    top: 1925px;
+    right: -25%;
+
+    animation: fadeIn ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.faq {
+    position: absolute;
+    width: 282px;
+    height: 64px;
+    top: 10px;
+    left: 31%;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 64px;
+
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    color: #5C6BF5;
+}
+.faq-heading {
+    position: absolute;
+    width: 604px;
+    height: 64px;
+    top: 20px;
+    left: 16%;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    color: #070337;
+}
+.faq-boxes {
+    position: relative;
+    width: 988px;
+    height: 420px;
+    top: 195px;
+    left: -30px;
+}
+q1 {
+    position: absolute;
+    width: 369px;
+    height: 64px;
+    top: 30.5px;
+    left: 309.5px;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 64px;
+
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    color: #070337;
+}
+a1 {
+    position: absolute;
+    width: 459px;
+    height: 20px;
+    top: 52.5px;
+    left: 520px;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #070337;
+}
+.faq-1 {
+    position: absolute;
+    width: 988px;
+    height: 125px;
+    
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.faq-2 {
+    position: absolute;
+    width: 988px;
+    height: 125px;
+    top: 150px;
+    
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.faq-3 {
+    position: absolute;
+    width: 988px;
+    height: 125px;
+    top: 300px;
+    
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.bp {
+    position: absolute;
+    height: 40px;
+    width: 475px;
+    top: 42.5px;
+    left: 485px;
+    background-color: white;
+}
+.purple-high2 {
+    position: absolute;
+    width: 420px;
+    height: 155px;
+    top: 2647px;
+    left: -10px;
+    transform: rotate(12.5deg);
+}
+.blue-low2 {
+    position: absolute;
+    width: 550px;
+    height: 155px;
+    top: 2733px;
+    left: -10px;
+    transform: rotate(10.4deg);
+}
+.blue-high2 {
+    position: absolute;
+    width: 420px;
+    height: 155px;
+    top: 2726px;
+    right: -10px;
+    transform: rotate(12.5deg);
+}
+.purple-low2 {
+    position: absolute;
+    width: 752px;
+    height: 185px;
+    transform: rotate(10.5deg);
+    top: 2784px;
+    right: -5px;
+}
+.light-purple2 {
+    position: absolute;
+    width: 420px;
+    height: 155px;
+    top: 2883px;
+    right: 125px;
+    transform: rotate(12.3deg);
+}
+#socials {
+    position: absolute;
+    width: 1140px;
+    height: 233px;
+    top: 3125px;
+    left: 20%;
+    animation: fadeIn ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.socials {
+    position: absolute;
+    width: 371.61px;
+    height: 45px;
+    top: 32px;
+    
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 45px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #0B132A;
+}
+.bp2 {
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    color: white;
+    outline: none;
+    border: none;
+
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    
+    background: #5C6BF5;
+    border-radius: 10px;
+}
+.bp2:hover {
+    transform: scale(1.02);
+    background: #6372f7;
+    position: absolute;
+    box-shadow: 0px 4px 14px 6px rgba(92, 107, 245, 0.45);
+    border-radius: 10px;
+}
+.bp2:active {
+    transform: scale(1.08);
+}
+.social-boxes {
+    position: absolute;
+    width: 527px;
+    height: 60px;
+    top: 86.5px;
+    left: 850px;
+}
+.twitter-button {
+    position: absolute;
+    left: -350px;
+}
+.OBr2 {
+    animation: slideInR2 ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes slideInR2 {
+    0% {
+        left: 2500px;
+    }
+    100% {
+        display: block;
+    }
+}
+.OBl2 {
+    animation: slideInL2 ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes slideInL2 {
+    0% {
+        left: -2000px;
+    }
+    100% {
+        display: block;
+    }
+}
+.rights {
+    position: absolute;
+    width: 316px;
+    height: 24px;
+    top: 3400px;
+    left: 5%;
+    padding-bottom: 25px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    text-align: right;
+    font-feature-settings: 'salt' on, 'liga' off;
+    
+    color: #343434;
+}
+.dm {
+    width: 120px;
+    height: 20px;
+    position: absolute;
+    top: 3420px;
+    left: 47%;
+}
+.discord-footer {
+    position: absolute;
+    width: 33.6px;
+    height: 33.6px;
+    background-color: #5C6BF5;
+    top: 3410px;
+    right: 10%;
+    border-radius: 100px;
+}
+.d2 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 23.5%;
+    top: 25.5%;
+}
+.twitter-footer {
+    position: absolute;
+    width: 33.6px;
+    height: 33.6px;
+    background-color: #75E3EA;
+    top: 3410px;
+    right: 7.5%;
+    border-radius: 100px;
+}
+.tw {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 23.8%;
+    top: 25.3%;
+}

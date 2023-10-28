@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal Proxies</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/gfx/logofav.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/gfx/logofav.png">
+    <script src="on-scroll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".faq-1").hover(function(){
+    $(".cover1").css("transform", "translateX(-450px)");
+    $(".q1").css("transform", "translateX(-250px)");
+    }, function(){
+    $(".cover1").css("transform", "translateX(0px)");
+    $(".q1").css("transform", "translateX(0px)");
+  });
+});
+$(document).ready(function(){
+  $(".faq-2").hover(function(){
+    $(".cover2").css("transform", "translateX(-450px)");
+    $(".q2").css("transform", "translateX(-250px)");
+    }, function(){
+    $(".cover2").css("transform", "translateX(0px)");
+    $(".q2").css("transform", "translateX(0px)");
+  });
+});
+$(document).ready(function(){
+  $(".faq-3").hover(function(){
+    $(".cover3").css("transform", "translateX(-450px)");
+    $(".q3").css("transform", "translateX(-250px)");
+    }, function(){
+    $(".cover3").css("transform", "translateX(0px)");
+    $(".q3").css("transform", "translateX(0px)");
+  });
+});
+function darkMode(document){
+  checkBox = document.getElementsByClassName("dark-mode");
+  if(checkBox.checked) {
+    document.body.css("background-color", "#0B0941");
+  }
+}
+darkMode();
+</script>
+</head>
+<body>
+<span class="turq-circle"></span>
+<span class="purp-circle"></span>
+<span class="lpurp-circle"></span>
+    <div id="backblur"></div>
+        <img class="logo" draggable="false" src="assets/gfx/logofav.png">
+        <div class="menu ht">
+           <a class="fe" href="#features">Features</a>
+           <a class="fa" href="#faq">FAQ</a>
+           <a class="so" href="#socials">Socials</a>
+           <button class="discord-header ht" target="__blank" onclick="window.open('https://discord.gg/h4Gr8zrPV7','_blank')">Discord</button>
+           <img class="d-h-s" src="assets/gfx/discord.png" draggable="false" onclick="window.open('https://discord.gg/h4Gr8zrPV7','_blank')">
+        </div>
+        <div class="branding">
+            <h1 class="brand">Signal Proxies</h1>
+            <h2 class="slogan">Your True All-In-One Proxy Solution.</h2>
+            <button class="dash" onclick="window.open('https://signal-proxies.com/dashboard')">Dashboard</button>
+        </div>
+<img src="assets/gfx/objects/light-purple.png" class="light-purple OBl" draggable="false">
+<img src="assets/gfx/objects/blue-high.png" class="blue-high OBr" draggable="false">
+<img src="assets/gfx/objects/purple-high.png" class="purple-high OBl" draggable="false">
+<img src="assets/gfx/objects/purple-low.png" class="purple-low OBr" draggable="false">
+<img src="assets/gfx/objects/blue-low.png" class="blue-low OBl" draggable="false">
+<div id="features">
+    <h3 class="features">Features</h3>
+    <h4 class="f-heading">What Makes Us Different</h4>
+    <div class="feat-boxes">
+        <div class="f-1"><p1>Fast and Reliable IPs<br></p1><p2>Our IPs are guaranteed to work and are optimized for a range of different sites</p2></div>
+        <div class="f-2"><p1>User:Pass Authentication<br></p1><p2>All of our proxies are User:Pass authenticated, so you can use your proxies from any device or IP address</p2></div>
+        <div class="f-3"><p1>Discord Support<br></p1><p2>Our community discord lets you get private support from our team to make sure you are prepared</p2></div>
+        <div class="f-4"><p1>User Friendly<br></p1><p2>Our services are all built to provide you with the a seamless process, including controlling your usage to instantly topping up your account</p2></div>
+    </div>
+</div>
+<div id="backblur-2"></div>
+<div id="faq">
+    <h3 class="faq">Frequently Asked Questions</h3>
+    <h4 class="faq-heading">Have Any Questions?</h4>
+    <div class="faq-boxes">
+        <div class="faq-1">
+            <a1>We currently offer Residential and ISP Proxies.</a1>
+            <div class="cover1 bp"></div>
+            <q1 class="q1">What Proxies Do You Provide?</q1>
+        </div>
+        <div class="faq-2">
+            <a1>We provide ISP plans that last either weekly or month. Our Residential Plans have no expiry date.</a1>
+            <div class="cover2 bp"></div>
+            <q1 class="q2">When Does My Data Expire?</q1>
+        </div>
+        <div class="faq-3">
+            <a1>We offer a dashboard for you to generate proxies so you can directly input them into your bots.</a1>
+            <div class="cover3 bp"></div>
+            <q1 class="q3">How Do I Use My Proxies?</q1>
+        </div>
+    </div>
+</div>
+<img src="assets/gfx/objects/light-purple.png" class="light-purple2 OBr2" draggable="false">
+<img src="assets/gfx/objects/blue-high.png" class="blue-high2 OBr2" draggable="false">
+<img src="assets/gfx/objects/purple-high.png" class="purple-high2 OBl2" draggable="false">
+<img src="assets/gfx/objects/purple-low.png" class="purple-low2 OBr2" draggable="false">
+<img src="assets/gfx/objects/blue-low.png" class="blue-low2 OBl2" draggable="false">
+<div id="socials">
+  <h4 class="socials">Social Media</h4>
+  <div class="social-boxes">
+    <button class="twitter-button bp2" onclick="window.open('https://twitter.com/SignalProxies','_blank')">Twitter</button>
+    <button class="discord-button bp2" onclick="window.open('https://discord.gg/h4Gr8zrPV7','_blank')">Discord Server</button>
+  </div>
+</div>
+  <p class="rights">© 2021 Signal Proxies LLC | All Rights Reserved</p>
+
+  <div class="discord-footer">
+    <img src="assets/gfx/discord2.png" draggable="false" class="d2">
+  </div>
+  <div class="twitter-footer">
+    <img src="assets/gfx/twitter.png" draggable="false" class="tw">
+  </div>
+</body>
+</html>
